@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance Management System</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial,sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image:url("attendance.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+
+    .container{
+        width:900px;
+        background:#fff;
+        padding:40px;
+        border-radius:20px;
+        text-align:center;
+        box-shadow:0 15px 35px rgba(0,0,0,0.25);
+        margin-left:600px;
+    }
+
+    h1{
+        color:#003366;
+        margin-bottom:10px;
+    }
+
+    h3{
+        color:#666;
+        margin-bottom:40px;
+        font-weight:normal;
+    }
+
+    .cards{
+        display:flex;
+        justify-content:space-between;
+        gap:20px;
+    }
+
+    .card{
+        flex:1;
+        background:#f8f9fa;
+        padding:30px 20px;
+        border-radius:15px;
+        transition:.3s;
+        box-shadow:0 5px 15px rgba(0,0,0,.15);
+    }
+
+    .card:hover{
+        transform:translateY(-8px);
+    }
+
+    .icon{
+        font-size:60px;
+        color:#003366;
+        margin-bottom:15px;
+    }
+
+    .card h2{
+        color:#003366;
+        margin-bottom:10px;
+    }
+
+    .card p{
+        color:#666;
+        font-size:15px;
+        margin-bottom:25px;
+        line-height:22px;
+    }
+
+    .btn{
+        display:inline-block;
+        text-decoration:none;
+        background:#003366;
+        color:white;
+        padding:12px 30px;
+        border-radius:30px;
+        font-weight:bold;
+    }
+
+    .btn:hover{
+        background:#0055aa;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Attendance Management System</h1>
+
+    <h3>Select Your Portal</h3>
+
+    <div class="cards">
+
+
+
+        <div class="card">
+
+            <div class="icon">
+                <i class="fas fa-user-shield"></i>
+            </div>
+
+            <h2>Administrator</h2>
+
+            <p>
+                Manage Regulations, Courses,
+                Departments and Faculty.
+            </p>
+
+            <a href="administratorLogin.html" class="btn">
+                Login
+            </a>
+
+        </div>
+
+        
+
+        <div class="card">
+
+            <div class="icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+
+            <h2>Faculty</h2>
+
+            <p>
+                Mark attendance and
+                view attendance reports.
+            </p>
+
+            <a href="Facultylogin.html" class="btn">
+                Login
+            </a>
+
+        </div>
+
+        
+
+        <div class="card">
+
+            <div class="icon">
+                <i class="fas fa-user-graduate"></i>
+            </div>
+
+            <h2>Student</h2>
+
+            <p>
+                View your attendance
+                and profile details.
+            </p>
+
+            <a href="studentLogin.jsp" class="btn">
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+

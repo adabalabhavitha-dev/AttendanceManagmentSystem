@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administrator Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial,sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:linear-gradient(135deg,#0d47a1,#1976d2);
+    }
+
+    .login-box{
+        width:400px;
+        background:#fff;
+        padding:40px;
+        border-radius:15px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .icon{
+        text-align:center;
+        font-size:60px;
+        color:#003366;
+        margin-bottom:15px;
+    }
+
+    h2{
+        text-align:center;
+        color:#003366;
+        margin-bottom:30px;
+    }
+
+    label{
+        display:block;
+        font-weight:bold;
+        margin-bottom:8px;
+        color:#333;
+    }
+
+    input{
+        width:100%;
+        padding:12px;
+        margin-bottom:20px;
+        border:1px solid #ccc;
+        border-radius:8px;
+        font-size:15px;
+        outline:none;
+    }
+
+    input:focus{
+        border-color:#003366;
+    }
+
+    button{
+        width:100%;
+        padding:12px;
+        background:#003366;
+        color:white;
+        border:none;
+        border-radius:8px;
+        font-size:16px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        background:#0055aa;
+    }
+
+    .back{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .back a{
+        text-decoration:none;
+        color:#003366;
+        font-weight:bold;
+    }
+
+    .back a:hover{
+        color:#0055aa;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <div class="icon">
+        <i class="fas fa-user-shield"></i>
+    </div>
+
+    <h2>Administrator Login</h2>
+
+    <form action="administratorLogin.jsp" method="post">
+
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter Username" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <div class="back">
+        <a href="index.html">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+                                            
